@@ -8,6 +8,7 @@ plugins {
 }
 
 repositories {
-    // Use the plugin portal to apply community plugins in convention plugins.
-    gradlePluginPortal()
+    maven {
+        url = uri("https://maven.aliyun.com/repository/gradle-plugin")
+    }
 }
