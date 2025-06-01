@@ -1,5 +1,5 @@
 plugins {
-    `java-common-conventions`
+    id("java-common-conventions")
 }
 
 dependencies {

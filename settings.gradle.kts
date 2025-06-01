@@ -22,4 +22,5 @@ plugins {
 }
 
 rootProject.name = "practice-gradle"
+includeBuild("build-logic")
 include("api","services","shared")

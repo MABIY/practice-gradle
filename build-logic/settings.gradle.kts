@@ -11,7 +11,7 @@ pluginManagement {
         }
         gradlePluginPortal()
 
-
     }
 
 }
+rootProject.name="build-logic"
