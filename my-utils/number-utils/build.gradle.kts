@@ -3,8 +3,13 @@ plugins {
 }
 
 group = "org.sample"
-version = "1.0"
+version = libs.versions.number.utils.get()
 
 repositories {
     mavenCentral()
+}
+
+dependencies {
+//    implementation("com.google.guava:guava:33.4.8-jre")
+    implementation(libs.guava)
 }

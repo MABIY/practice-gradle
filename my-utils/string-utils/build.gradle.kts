@@ -3,12 +3,12 @@ plugins {
 }
 
 group = "org.sample"
-version = "1.0"
+version = libs.versions.string.utils.get()
 
 repositories {
     mavenCentral()
 }
 
 dependencies {
-    implementation("org.apache.commons:commons-lang3:3.4")
+    implementation(libs.commons.lang3)
 }

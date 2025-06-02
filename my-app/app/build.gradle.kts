@@ -8,8 +8,8 @@ application {
 }
 
 dependencies {
-    implementation("org.sample:number-utils:1.0")
-    implementation("org.sample:string-utils:1.0")
+    implementation(libs.number.utils)
+    implementation(libs.string.utils)
 }
 // end::app_dependencies[]
 
