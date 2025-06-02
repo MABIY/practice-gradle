@@ -11,10 +11,14 @@ repositories {
     mavenCentral()
 }
 
+val libs = extensions.getByType(VersionCatalogsExtension::class.java).named("libs")
+
+
 dependencies {
-    implementation("org.slf4j:slf4j-api:2.0.9")
-    testImplementation("org.junit.jupiter:junit-jupiter:5.11.3")
-    testRuntimeOnly("org.junit.platform:junit-platform-launcher")
+    implementation(libs.findLibrary("slf4j-api").get())
+    testImplementation(platform(libs.findLibrary("junit-bom").get()))
+    testImplementation(libs.findLibrary("junit-jupiter").get())
+    testRuntimeOnly(libs.findLibrary("junit-platform").get())
 }
 
 java {
