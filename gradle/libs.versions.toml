@@ -3,14 +3,18 @@
 
 [versions]
 guava = "33.3.1-jre"
-junit-jupiter = "5.11.3"
 commons-lang3 = "3.4"
 number-utils = "2.0"
 string-utils = "2.0"
+junit-bom = "5.12.1"
+slf4j = "2.0.9"
 
 [libraries]
 guava = { module = "com.google.guava:guava", version.ref = "guava" }
-junit-jupiter = { module = "org.junit.jupiter:junit-jupiter", version.ref = "junit-jupiter" }
+slf4j-api = { module = "org.slf4j:slf4j-api", version.ref = "slf4j" }
+junit-bom = { module = "org.junit:junit-bom", version.ref = "junit-bom" }
+junit-jupiter = { module = "org.junit.jupiter:junit-jupiter" }
+junit-platform = { module = "org.junit.platform:junit-platform-launcher" }
 commons-lang3 = { module = "org.apache.commons:commons-lang3", version.ref = "commons-lang3" }
 number-utils = {module="org.sample:number-utils",version.ref="number-utils"}
 string-utils = {module="org.sample:string-utils",version.ref="string-utils"}

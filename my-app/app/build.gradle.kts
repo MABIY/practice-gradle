@@ -1,6 +1,6 @@
 // tag::app_dependencies[]
 plugins {
-    id("application")
+    id("java-application-conventions")
 }
 
 application {
