@@ -20,6 +20,7 @@ plugins {
 
 rootProject.name = "practice-gradle"
 
+includeBuild("build-logic")
 includeBuild("my-app")
 // tag::inc[]
 includeBuild("my-utils")

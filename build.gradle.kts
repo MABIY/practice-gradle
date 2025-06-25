@@ -4,6 +4,13 @@ defaultTasks("run")
 tasks.register("run") {
     dependsOn(gradle.includedBuild("my-app").task(":app:run"))
 }
+tasks.register("build") {
+    // 对每个 included build 注册依赖
+    gradle.includedBuilds.map { included ->
+        dependsOn(included.task(":build"))
+    }
+}
+
 // end::run[]
 
 tasks.register("checkAll") {
